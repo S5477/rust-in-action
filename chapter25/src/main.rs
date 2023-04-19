@@ -108,3 +108,7 @@ fn render_mandelbrot(escape_vals: Vec<Vec<usize>>) {
 fn add_width_lifetimes<'a, 'b>(i: &'a i32, j: &'b i32) -> i32 {
     *i + *j
 }
+
+fn add2<T: std::ops::Add<Output = T>>(i: T, j: T) -> T {
+    i + j
+}
